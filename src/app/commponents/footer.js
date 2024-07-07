@@ -1,12 +1,9 @@
-import { useContext } from "react"
-import { BackgroundContext } from "../commponents/context/BackgroundContext"
 
 function Footer() {
 
-    const { color , bgcolor } = useContext(BackgroundContext)
 
     return(
-        <div style={{ background:bgcolor , color:color }} className="flex justify-center items-center w-full h-[12rem] md:px-2">
+        <div className="flex justify-center items-center w-full h-[12rem] md:px-2">
             <div className="w-[33%] flex flex-col justify-center items-start ml-40 md:w-[50%] md:ml-0">
                 <h1 className="text-2xl font-bold mb-3">Coffee Shop</h1>
                 <h2 className="text-xl">-Espresso</h2>

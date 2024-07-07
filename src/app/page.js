@@ -1,6 +1,5 @@
 'use client'
-import { useContext } from "react";
-import { BackgroundProvider , BackgroundContext } from "./commponents/context/BackgroundContext";
+
 import Header from "./commponents/header";
 import Slider from "./commponents/slider";
 import Product from "./commponents/product";
@@ -13,20 +12,18 @@ export default function Home() {
 
 
   return (
-    <BackgroundProvider>
-      <main className="flex text-whtie flex-col justify-center items-center">
+    <main className="flex text-whtie flex-col justify-center items-center">
 
-          <Header />
+        <Header />
 
-          <Slider />
+        <Slider />
 
-          <Product />
+        <Product />
 
-          <Info />
+        <Info />
 
-          <Footer />
+        <Footer />
 
-      </main>
-    </BackgroundProvider>
+    </main>
   );
 }

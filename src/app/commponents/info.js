@@ -1,10 +1,10 @@
 'use client'
-import { useState , useEffect, useContext } from "react"
-import { BackgroundContext } from "../commponents/context/BackgroundContext";
+import { useState , useEffect } from "react"
+
 
 export default function Info() {
 
-const { color , Changecolor , bgcolor } = useContext(BackgroundContext);
+
     
 //------------------------------------------------------------------    
 
@@ -233,7 +233,7 @@ const { color , Changecolor , bgcolor } = useContext(BackgroundContext);
             
             <div className="left flex flex-col gap-7 justify-center items-center w-[30%] md:w-full md:flex-row md:mb-10">
 
-                <div style={{background: bgcolor , color: color}} className="users w-[250px] md:w-[150px] bg-white text-black flex justify-center items-center flex-col p-7 rounded-xl md:p-2">
+                <div className="users w-[250px] md:w-[150px] bg-white text-black flex justify-center items-center flex-col p-7 rounded-xl md:p-2">
                     {num.map((thing) => {
                         return(
                             <h1 key={thing.id} className="num text-[60px] font-bold md:text-[24px]">
@@ -244,7 +244,7 @@ const { color , Changecolor , bgcolor } = useContext(BackgroundContext);
                     <span className="text-2xl md:text-[17px]">Customers</span>
                 </div>
 
-                <div style={{background: bgcolor , color: color}} className="users w-[250px] md:w-[150px] bg-white text-black flex justify-center items-center flex-col p-7 rounded-xl md:p-2">
+                <div className="users w-[250px] md:w-[150px] bg-white text-black flex justify-center items-center flex-col p-7 rounded-xl md:p-2">
                     {numT.map((thing) => {
                         return(
                             <h1 key={thing.id} className="num text-[60px] font-bold md:text-[24px]">
@@ -255,7 +255,7 @@ const { color , Changecolor , bgcolor } = useContext(BackgroundContext);
                     <span className="text-2xl md:text-[17px]">Branches</span>
                 </div>
 
-                <div style={{background: bgcolor , color: color}} className="users w-[250px] md:w-[250px] bg-white text-black flex justify-center items-center flex-col p-7 rounded-xl md:p-2">
+                <div className="users w-[250px] md:w-[250px] bg-white text-black flex justify-center items-center flex-col p-7 rounded-xl md:p-2">
                     {numB.map((thing) => {
                         return(
                             <h1 key={thing.id} className="num text-[60px] font-bold md:text-[24px]">
@@ -269,11 +269,11 @@ const { color , Changecolor , bgcolor } = useContext(BackgroundContext);
             </div>
 
             <div className="right flex flex-col justify-center items-center w-[70%] md:w-full">
-                <div style={{background: bgcolor , color: color}} className="title bg-white text-black flex flex-col justify-center items-center w-[100%] rounded-2xl">
+                <div className="title bg-white text-black flex flex-col justify-center items-center w-[100%] rounded-2xl">
                     <h1 className="text-3xl my-4 font-bold md:text-2xl">What we do?</h1>
                     <span className="text-xl mb-5 md:text-[20px] md:text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </span>
                 </div>
-                <div style={{background: bgcolor , color: color}} className="info mt-2 bg-white text-black w-full flex flex-col justify-center items-center rounded-xl">
+                <div className="info mt-2 bg-white text-black w-full flex flex-col justify-center items-center rounded-xl">
                     <div style={{borderBlockColor: color}} className="border-b-solid border-b-2 border-black">
                         <h1 className="text-2xl my-4 md:text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
                     </div>

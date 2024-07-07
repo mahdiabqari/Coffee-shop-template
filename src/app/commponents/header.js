@@ -1,6 +1,5 @@
 'use Client'
-import { useContext, useState } from "react";
-import { BackgroundContext } from "../commponents/context/BackgroundContext";
+import { useState } from "react";
 
 function Header() {
 
@@ -25,9 +24,6 @@ function Header() {
       }
     }
 
-
-    const { color , bgcolor , Changecolorlight , Changecolordark } = useContext(BackgroundContext)
-
     const Changeall = () => {
       Changecolorlight()
     }
@@ -37,7 +33,7 @@ function Header() {
     }
 
     return(
-        <div style={{background: bgcolor , color: color}} className="header flex justify-center items-center w-[100%] h-[4rem] md:h-[17rem] md:mr-auto md:rounded-br-xl md:w-[20%] sticky top-0">
+        <div className="header flex justify-center items-center w-[100%] h-[4rem] md:h-[17rem] md:mr-auto md:rounded-br-xl md:w-[20%] sticky top-0">
           <div className="flex justify-between items-center w-[80%] h-[4rem] rounded-b-2xl md:flex-col md:h-[17rem] md:w-[20%] md:mt-7">
             <div className="left flex gap-4 text-2xl justify-center items-center ml-4 md:hidden">
               Coffee Shop
@@ -57,7 +53,7 @@ function Header() {
 
               {themename.map((item) => {
                 return(
-                  <div style={{background: bgcolor}} className="mode rounded-b-xl flex py-2 px-2 flex-col absolute top-16 md:top-[15rem] md:left-[3.5rem] md:rounded-xl">
+                  <div className="mode rounded-b-xl flex py-2 px-2 flex-col absolute top-16 md:top-[15rem] md:left-[3.5rem] md:rounded-xl">
                     <div onClick={Changeall}  className="flex my-1 justify-center items-center gap-2 mx-2">
                       <img className="w-6 rounded-full mx-1" src={item.urlligth}/>
                       <h2 className="mx-2">{item.namelight}</h2>

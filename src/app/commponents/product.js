@@ -1,6 +1,5 @@
 'use client'
-import { useContext, useState } from "react"
-import { BackgroundContext } from "../commponents/context/BackgroundContext"
+import { useState } from "react"
 
 export default function Product () {
 
@@ -17,7 +16,7 @@ export default function Product () {
 
     return(
         <div className="md:w-[95%] flex flex-col justify-center items-center">
-            <div  style={ { background: bgcolor , color: color } } className="title bg-white text-black flex flex-col justify-center items-center w-[80%] rounded-2xl md:w-[95%] md:px-[1px]">
+            <div className="title bg-white text-black flex flex-col justify-center items-center w-[80%] rounded-2xl md:w-[95%] md:px-[1px]">
                 <h1 className="text-3xl my-4 font-bold"> Productions </h1>
                 <span className="text-xl mb-5 md:text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             </div>
@@ -25,7 +24,7 @@ export default function Product () {
             <div className="products w-[80%] flex justify-between items-center flex-wrap gap-7 mt-12 md:flex-col md:w-[95%]">
                 {info.map((item) => {
                     return(
-                        <div key={item.id} style={ { background: bgcolor , color: color } } className="card rounded-xl w-[30%] bg-white text-black flex flex-col justify-center items-start px-4 py-2 md:w-[90%]">
+                        <div key={item.id} className="card rounded-xl w-[30%] bg-white text-black flex flex-col justify-center items-start px-4 py-2 md:w-[90%]">
                             <div className="ja rounded-xl mb-4 h-[14rem]"><img className="js rounded-xl mb-4 h-[14rem]" src={item.src}/></div>
                             <h1 className="text-2xl font-bold">{item.title}</h1>
                             <p>
