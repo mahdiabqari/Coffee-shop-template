@@ -1,5 +1,4 @@
 'use client'
-import { useContext } from "react";
 import { BackgroundProvider , BackgroundContext } from "./commponents/context/BackgroundContext";
 import Header from "./commponents/header";
 import Slider from "./commponents/slider";
