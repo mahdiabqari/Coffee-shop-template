@@ -70,8 +70,8 @@ function Slider(){
                 </div>
                 {slides.map((item) => {
                     return(
-                        <div className="bg_banner w-full flex justify-center items-center">
-                            <img className="bg_banner w-[90%] absolute h-[55rem] rounded-b-[40px] md:w-full md:h-[23rem] md:rounded-b-[8rem]" key={item.id} src={item.src}/>
+                        <div key={item.id} className="bg_banner w-full flex justify-center items-center">
+                            <img className="bg_banner w-[90%] absolute h-[55rem] rounded-b-[40px] md:w-full md:h-[23rem] md:rounded-b-[8rem]" src={item.src} alt="png"/>
                         </div>
                     )
                 })}
