@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <BackgroundProvider>
-      <main className="flex text-whtie flex-col justify-center items-center">
+      <main className="container-app flex text-whtie flex-col justify-center items-center">
 
           <Header />
 
