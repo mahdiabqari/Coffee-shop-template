@@ -123,7 +123,7 @@ img{
 }
 
 .mode{
-  animation: mode 1s normal;
+  animation: mode 0.5s normal;
   backdrop-filter: blur(15px);
 }
 @keyframes mode {
