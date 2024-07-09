@@ -278,9 +278,9 @@ const { color , Changecolor , bgcolor } = useContext(BackgroundContext);
                         <h1 className="text-2xl my-4 md:text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
                     </div>
                     <div className="mx-8 my-4 md:mx-2">
-                        <p className="par text-xl text-center my-4 md:text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officiis illum cumque unde commodi veniam dignissimos, animi, eius qui velit magnam ipsum provident quidem minus consectetur suscipit! Vero, corporis dolores.</p>
-                        <p className="par text-xl text-center  md:text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officiis illum cumque unde commodi veniam dignissimos, animi, eius qui velit magnam ipsum provident quidem minus consectetur suscipit! Vero, corporis dolores.</p>
-                        <p className="par text-xl text-center  md:text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officiis illum cumque unde commodi veniam dignissimos, animi, eius qui velit magnam ipsum provident quidem minus consectetur suscipit! Vero, corporis dolores.</p>
+                        <p className="par text-xl text-center my-4 mx-4 md:text-[17px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officiis illum cumque unde commodi veniam dignissimos, animi, eius qui velit magnam ipsum provident quidem minus consectetur suscipit! Vero, corporis dolores.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officiis illum cumque unde commodi veniam dignissimos, animi, eius qui velit magnam ipsum provident quidem minus consectetur suscipit! Vero, corporis dolores.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officiis illum cumque unde commodi veniam dignissimos, animi, eius qui velit magnam ipsum provident quidem minus consectetur suscipit! Vero, corporis dolores.</p>
                     </div>
                 </div>
             </div>
