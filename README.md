@@ -1,4 +1,4 @@
-#Coffee Shop Template
+# Coffee Shop Template
 ---
 A simple coffee shop template with Next js
 
