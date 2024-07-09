@@ -39,7 +39,7 @@ function Header() {
     return(
         <div style={{background: bgcolor , color: color}} className="header flex justify-center items-center w-[100%] h-[4rem] md:h-[17rem] md:mr-auto md:rounded-br-xl md:w-[20%] sticky top-0">
           <div className="flex justify-between items-center w-[80%] h-[4rem] rounded-b-2xl md:flex-col md:h-[17rem] md:w-[20%] md:mt-7">
-            <div className="left flex gap-4 text-2xl justify-center items-center ml-4 md:hidden">
+            <div className="left flex font-bold gap-4 text-2xl justify-center items-center ml-4 md:hidden">
               Coffee Shop
             </div>
             <div className="center">
