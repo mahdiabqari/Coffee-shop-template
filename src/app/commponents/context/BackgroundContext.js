@@ -1,5 +1,5 @@
 'use client'
-import { createContext, useReducer } from "react";
+import { createContext , useReducer } from "react";
 
 export const BackgroundContext = createContext()
 
